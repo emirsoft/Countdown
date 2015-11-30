@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="http://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+		<script src="/Countdown.js"></script>
+	</head>
+	<body>
+		<input id='test_input' type="button" value="this is input" />
+		
+		<a id='test_link' href='#' >this is a link</a>
+		
+		<form>
+			<button id='test_button'>this is button</button>
+		</form>
+    
+    <div id="test_div" style="border: 1px solid grey;">this is div</div>
+	</body>
+	<script>
+	$(function(){
+		$('#test_input').Countdown();
+		$('#test_link').Countdown();
+		$('#test_button').Countdown();
+		$('#test_div').Countdown();
+	});
+	</script>
+</html>
