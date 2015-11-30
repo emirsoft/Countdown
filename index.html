@@ -17,8 +17,17 @@
 	<script>
 	$(function(){
 		$('#test_input').Countdown();
-		$('#test_link').Countdown();
-		$('#test_button').Countdown();
+		$('#test_link').Countdown({
+			before_count: function(){
+				alert('link --- before');
+			},
+			after_count: function(){
+				alert('link --- after');
+			}
+		});
+		$('#test_button').Countdown({
+			delay_time: 180
+		});
 		$('#test_div').Countdown();
 	});
 	</script>
